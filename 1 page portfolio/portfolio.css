@@ -648,17 +648,17 @@ font-size: 20px;
 .service-container .service-icon {
     top: 20px;
     left: calc(50% - 40px);
-    width: 80px;
+    width: 90px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 20%;
     
 }
 .service-container .service-icon i {
-    position: absoe;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 60px;
     transition: 0.5s;
     color: rgb(0, 0, 0);
     margin-top: 30px;
@@ -676,6 +676,8 @@ font-size: 20px;
     box-sizing: border-box;
     transition: 0.5s;
     opacity: 0;
+    font-weight: 900;
+    font-size: 40px;
 }
 .service-container:hover .service-name{
 top: 100px;
@@ -690,19 +692,37 @@ opacity: 1;
     text-align: center;
     opacity: 0;
     transition: 1s;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
 }
 .service-container:hover p{
     opacity: 1;
 }
 .service-container:nth-child(odd) .service-icon{
-    background: pink;
+    background: rgb(119, 7, 156);
 }
 .service-container:nth-child(odd){
-background: orange;
+background: #fff;
 }
 .service-container:nth-child(even) .service-icon{
-    background: orange;
+    background: #fff;
 }
 .service-container:nth-child(even){
-background: pink;
+background: rgb(119, 7, 156);
+}
+.service-container:nth-child(odd) p {
+    color: rgb(119, 7, 156);
+}
+.service-container:nth-child(even) p {
+    color: #fff;
+}
+.service-container:nth-child(even) .service-name{
+    color: #fff;
+}
+.service-container:nth-child(even) .service-icon i{
+    color: #61108a;
+}
+.service-container:nth-child(odd) .service-icon i{
+    color: #fff;
 }
